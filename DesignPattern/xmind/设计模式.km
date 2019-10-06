@@ -1,0 +1,520 @@
+{
+    "root": {
+        "data": {
+            "id": "bwyrq9zg3f40",
+            "created": 1568367080043,
+            "text": "设计模式",
+            "note": "## 设计模式\n\n  - 设计模式是某类问题的通用解决方案，代表了最佳的实践"
+        },
+        "children": [
+            {
+                "data": {
+                    "id": "bwyrqlq2ucg0",
+                    "created": 1568367105598,
+                    "text": "设计原则",
+                    "expandState": "collapse"
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "bwyrurqplvs0",
+                            "created": 1568367432154,
+                            "text": "单一职责原则",
+                            "priority": 1,
+                            "expandState": "collapse",
+                            "note": "## 单一职责\n\n  - 类的单一职责\n  - 方法的单一职责"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "bwysbpcqw9s0",
+                                    "created": 1568368759147,
+                                    "text": "通过设计不同的类来体现"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "bwysc0b55ag0",
+                                    "created": 1568368782994,
+                                    "text": "通过设计不同的方法"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "bwysc64tg800",
+                                    "created": 1568368795673,
+                                    "text": "通过传入不同的参数"
+                                },
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "bwysj4n7teo0",
+                            "created": 1568369340981,
+                            "text": "接口隔离原则",
+                            "priority": 2,
+                            "note": "## 接口隔离原则\n\n  - 将接口进行拆分，避免在实现接口的时候，定义一些不必要的方法"
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "bwysj9xjwgw0",
+                            "created": 1568369352490,
+                            "text": "依赖倒转原则",
+                            "priority": 3,
+                            "note": "## 依赖倒转原则\n>程序依赖抽象，而不依赖具体的实现\n>依赖倒转原则的核心是面向接口编程\n\n  - 高层模块不应该依赖低层模块，二者都应该依赖其抽象\n  \n  - 低层模块尽量都要有抽象类或接口，或者两者都有，程序稳定性更好\n  \n  - 抽象不应该依赖细节，细节应该依赖抽象\n  \n  - 细节是多变的，而抽象是相对稳定的，在java中，抽象指的是抽象类或接口，细节就是具体的实现类\n  \n  - 使用接口或抽象类的目的是制定好规范，而不设计任何具体的操作，展现细节的任务交给他们的实现类去完成\n  \n  - 在方法参数或构造器参数尽量传递抽象"
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "bwysjhku9nk0",
+                            "created": 1568369369135,
+                            "text": "里氏替换原则",
+                            "priority": 4,
+                            "note": "## 里式替换原则（LSP）\n\n  - 任何基类可以出现的地方，子类一定可以出现\n  \n  - 继承必须确保超类所拥有的性质在子类中仍然成立\n  \n  - 当一个子类的实例应该能够替换任何其超类的实例时，它们之间才具有is-A关系\n  \n### 实际应用\n\n  - 子类不要重写父类的方法，会破坏继承体系\n  \n  - 在子类和父类的基础上再提取一个抽象，并继承提取出的抽象"
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "bwysjnzhoig0",
+                            "created": 1568369383082,
+                            "text": "开闭原则",
+                            "priority": 5,
+                            "note": "## 开闭原则（OCP）\n\n  - 软件中的对象（类，模块，函数等等）应该对于扩展是开放的，但是对于修改是封闭的\n  \n  - 扩展类、扩展方法，尽量不修改原来的代码"
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "bwysjsfc3mo0",
+                            "created": 1568369392747,
+                            "text": "迪米特原则",
+                            "priority": 6,
+                            "note": "## 迪米特法则\n\n  - 一个对象应该对其他对象保持最少的了解\n  \n  - 直接朋友：方法参数、成员变量、方法返回值\n  \n  - 成员变量不是直接的朋友，要尽量少用"
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "bwysk4rvl0o0",
+                            "created": 1568369419627,
+                            "text": "合成复用原则",
+                            "priority": 7,
+                            "note": "## 合成复用原则\n\n  - 尽量使用合成/聚合的方式，而不是使用继承"
+                        },
+                        "children": []
+                    }
+                ]
+            },
+            {
+                "data": {
+                    "id": "bwzb8gp006o0",
+                    "created": 1568422106292,
+                    "text": "分类",
+                    "expandState": "expand"
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "bx0eu9mwe4o0",
+                            "created": 1568533838226,
+                            "text": "创建型模式",
+                            "priority": 1,
+                            "expandState": "expand",
+                            "note": "## 创建型模式\n\n  - 创建型模式主要用于创建对象"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "bx0ev5advc00",
+                                    "created": 1568533907126,
+                                    "text": "单例模式",
+                                    "note": "## 单例模式 Singleton Pattern\n>整个系统中只存在一个类的实例，并且该类只提供一个取得对象实例的方法\n\n## 何种情况下使用？\n\n  - 重量级对象\n  - 需要频繁创建和销毁的对象\n  - 工具类对象\n  - 频繁访问数据库或文件的对象\n  \n\n\n",
+                                    "priority": null,
+                                    "expandState": "collapse"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "bx0fx8bja740",
+                                            "created": 1568536891564,
+                                            "text": "饿汉式",
+                                            "note": "## 饿汉式\n\n### 方式一\n\n  - 用静态常量存放对象实例\n  - 提供静态方法用于获取对象实例\n  \n### 方式二\n\n  - 静态变量存放对象实例\n  - 静态代码块实例化对象实例\n  - 提供静态方法获取对象实例\n\n### 优点\n\n  - 类装载的时候就完成实例化，避免了线程同步的问题\n\n### 缺点\n\n  - 没有使用懒加载的方式，可能会造成内存浪费"
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "bx0gmphysd40",
+                                            "created": 1568538888063,
+                                            "text": "懒汉式",
+                                            "note": "## 懒汉式\n>需要的时候动态创建对象实例\n\n### 方式一\n>线程不安全\n\n  - 通过静态变量存储对象实例\n  - 提供静态方法用于获取对象实例\n  - 在获取对象实例时动态创建对象实例\n  - 实际开发中不使用该方式\n\n### 方式二\n>线程同步\n\n  - 通过静态变量存储对象实例\n  - 提供静态方法用于获取对象实例\n  - 在获取对象实例时动态创建对象实例\n  - 通过 synchronized 修饰获取对象实例的方法，使该方法变成一个同步方法\n  - 每次获取对象实例都要进行同步，效率太低\n  - 实际开发中不使用该方法\n\n### 方式三\n  - synchronized 修饰代码块\n"
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "bx0hap70jvc0",
+                                            "created": 1568540768140,
+                                            "text": "双重检查",
+                                            "note": "## 双重检查\n\n```java\npublic class Singleton {\n    private static volatile Singleton instance;\n    private Singleton(){}\n    public static Singleton getInstance(){\n        if(instance == null){\n            synchronized(Singleton.class){\n                if(instance == null){\n                    instance = new Singleton();\n                }\n            }\n        }\n        return instance;\n    }\n}\n\n```\n\n### 优点\n\n  - 线程安全\n  - 延迟加载\n  - 效率较高\n  \n  "
+                                        },
+                                        "children": [
+                                            {
+                                                "data": {
+                                                    "id": "bx0hdp6a03s0",
+                                                    "created": 1568541003188,
+                                                    "text": "volatile和synchronized的区别"
+                                                },
+                                                "children": []
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "bx0lio0wj1s0",
+                                            "created": 1568552676947,
+                                            "text": "静态内部类",
+                                            "note": "## 静态内部类\n\n```java\npublic class Singleton {\n    private static class SingletonInstance{\n        private static final Singleton instance = new Singleton();\n    }\n    public static Singleton getInstance(){\n        return SingletonInstance.instance;\n    }\n}\n```\n\n### 静态内部类\n>JVM在装载类的时候是线程安全的\n\n  - 外部类在装载的时候，不会装载静态内部类\n  - 静态内部类是线程安全的\n  - 静态内部类在调用的时候只会装载一次\n  "
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            },
+                            {
+                                "data": {
+                                    "id": "bx0evfa9y480",
+                                    "created": 1568533928887,
+                                    "text": "原型模式",
+                                    "note": "## 原型模式\n\n  - 实现接口 Cloneable 才能克隆对象\n  - 默认的clone方法是浅拷贝\n  \n### 优缺点\n\n####优点\n  - 创建新的对象比较复杂时，可以利用原型模式简化对象的创建过程\n  - 可以动态的获取对象的运行时状态\n\n#### 缺点\n  - 实现深拷贝时需要比较复杂的代码\n  - 需要为每一个类配备一个克隆方法，这对全新的类不是很难，但对已有的类进行改造时需要修改其源代码，违背了ocp原则",
+                                    "expandState": "collapse"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "bxi8qaupy200",
+                                            "created": 1570344679979,
+                                            "text": "浅拷贝",
+                                            "note": "## 深拷贝\n\n  - 重写clone方法实现深拷贝\n  \n  - 通过对象序列化实现拷贝\n  \n## 序列化\n\n  a）序列化时，只对对象的状态进行保存，而不管对象的方法；\n    b）当一个父类实现序列化，子类自动实现序列化，不需要显式实现Serializable接口；\n    c）当一个对象的实例变量引用其他对象，序列化该对象时也把引用对象进行序列化；\n    d）并非所有的对象都可以序列化"
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "bxi8qgkasm00",
+                                            "created": 1570344692410,
+                                            "text": "深拷贝"
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            },
+                            {
+                                "data": {
+                                    "id": "bx0evjel6140",
+                                    "created": 1568533937855,
+                                    "text": "建造者模式",
+                                    "note": "## 建造者模式\n\n### 四个角色\n  1. Product 一个具体的产品对象\n  \n  2. Builder(抽象建造者) 创建一个Product对象的各个部件指定的接口\n  \n  3. ConcreteBuilder(具体建造者) 实现接口，构建各个部件\n  \n  4. Director(指挥者) 构建一个使用Builder接口的对象，它主要是用于创建一个复杂的对象。它有两个主要的作用：隔离客户与对象的生成过程；负责控制产品对象的生成过程"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "bx0evn793hs0",
+                                    "created": 1568533946119,
+                                    "text": "工厂模式",
+                                    "note": "## 工厂模式",
+                                    "hyperlink": "https://www.cnblogs.com/zailushang1996/p/8601808.html",
+                                    "hyperlinkTitle": "",
+                                    "expandState": "collapse"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "bxboi3nwer40",
+                                            "created": 1569678255478,
+                                            "text": "简单工厂模式",
+                                            "note": "## 简单工厂模式\n>简单工厂模式是由一个工厂对象决定创建出哪一种产品类的实例。定义了一个创建对象的类，由这个类来封装实例化对象\n\n  - 多个产品对应一个工厂类，通过传入的参数不同来生成不同的产品\n  -不符合开闭原则，增加一种产品时，需要修改工厂类\n\n### 特点\n\n  1. 它是一个具体的类，非接口 抽象类。有一个重要的create()方法，利用if或者 switch创建产品并返回\n  \n  2. create()方法通常是静态的，所以也称之为静态工厂"
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "bxboibqk0140",
+                                            "created": 1569678273053,
+                                            "text": "抽象工厂模式",
+                                            "note": "## 抽象工厂模式\n\n  - 适合多类产品组合，产品的种类变化不大，但组合可以千变万化"
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "bxcv4qqkqwo0",
+                                            "created": 1569798516334,
+                                            "text": "工厂方法",
+                                            "note": "## 工厂方法模式\n\n  - 一个产品对应一个工厂类\n  - 同类产品有多个时，需要多个工厂类"
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "bx0eud6oil40",
+                            "created": 1568533845952,
+                            "text": "结构型模式",
+                            "priority": 2,
+                            "expandState": "collapse",
+                            "note": "## 结构型模式\n\n  - 结构型模式主要用于处理类或对象的组合"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "bx0evs3uesg0",
+                                    "created": 1568533956797,
+                                    "text": "适配器模式"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "bx0evwhyr600",
+                                    "created": 1568533966358,
+                                    "text": "桥接模式"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "bx0ew29en400",
+                                    "created": 1568533978901,
+                                    "text": "装饰器模式"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "bx0ew9fdr7s0",
+                                    "created": 1568533994500,
+                                    "text": "组合模式"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "bx0ewc5pank0",
+                                    "created": 1568534000445,
+                                    "text": "外观模式"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "bx0ewfssqg00",
+                                    "created": 1568534008372,
+                                    "text": "享元模式"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "bx0ewnp3zmw0",
+                                    "created": 1568534025563,
+                                    "text": "代理模式"
+                                },
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "bx0euh6132g0",
+                            "created": 1568533854620,
+                            "text": "行为型模式",
+                            "priority": 3,
+                            "expandState": "collapse",
+                            "note": "## 行为型模式\n\n  - 行为型模式主要用于描述对类或对象怎样交互和怎样分配职责"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "bx0ewr64qfc0",
+                                    "created": 1568534033122,
+                                    "text": "模板方法模式"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "bx0ewwgdwzk0",
+                                    "created": 1568534044626,
+                                    "text": "命令模式"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "bx0ewzf0va80",
+                                    "created": 1568534051074,
+                                    "text": "访问者模式"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "bx0ex2ixy0o0",
+                                    "created": 1568534057842,
+                                    "text": "迭代器模式"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "bx0ex76aniw0",
+                                    "created": 1568534067961,
+                                    "text": "观察者模式"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "bx0exakajmg0",
+                                    "created": 1568534075337,
+                                    "text": "中介者模式"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "bx0exh5d5ko0",
+                                    "created": 1568534089672,
+                                    "text": "备忘录模式"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "bx0exkd0i6g0",
+                                    "created": 1568534096665,
+                                    "text": "解释器模式"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "bx0exnz2rso0",
+                                    "created": 1568534104530,
+                                    "text": "状态模式"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "bx0exrmav7c0",
+                                    "created": 1568534112464,
+                                    "text": "策略模式"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "bx0exvatik80",
+                                    "created": 1568534120477,
+                                    "text": "责任链模式"
+                                },
+                                "children": []
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "data": {
+                    "id": "bwzba11odoo0",
+                    "created": 1568422228959,
+                    "text": "UML类图",
+                    "expandState": "collapse"
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "bwzc2vtm8800",
+                            "created": 1568424490148,
+                            "text": "类与类的关系",
+                            "note": "## 类与类的关系\n\n### 区分组合与聚合？\n\n  - 生命周期\n  - 部分是否能脱离整体而独立存在",
+                            "expandState": "collapse"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "bwzc3160jow0",
+                                    "created": 1568424501782,
+                                    "text": "依赖",
+                                    "note": "## 依赖\n\n  - 类中使用到了其他某各类\n  \n  - 作为类的成员属性\n  \n  - 作为方法的参数\n  \n  - 作为方法的返回值\n  \n  - 类的方法中使用到\n  "
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "bwzc34gawt40",
+                                    "created": 1568424508934,
+                                    "text": "泛化",
+                                    "note": "## 泛化\n\n  - 继承关系，是一种特殊的依赖关系"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "bwzc3nagqu00",
+                                    "created": 1568424549940,
+                                    "text": "实现",
+                                    "note": "## 实现\n\n  - 类实现接口"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "bwzc3berr800",
+                                    "created": 1568424524079,
+                                    "text": "组合",
+                                    "note": "## 组合\n\n  - 整体与部分不可分开"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "bwzc3fahdko0",
+                                    "created": 1568424532527,
+                                    "text": "聚合",
+                                    "note": "## 聚合\n\n  - 整体与部分的关系，整体与部分可以分开而独立存在"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "bwzc3hl05qw0",
+                                    "created": 1568424537517,
+                                    "text": "关联",
+                                    "note": "## 关联关系\n\n  - 单向一对一\n  \n  - 双向一对一"
+                                },
+                                "children": []
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    "template": "right",
+    "theme": "fresh-blue",
+    "version": "1.4.43"
+}

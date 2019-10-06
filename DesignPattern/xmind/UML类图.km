@@ -1,0 +1,79 @@
+{
+    "root": {
+        "data": {
+            "id": "bwoo6vwxn1k0",
+            "created": 1567341497601,
+            "text": "UML类图",
+            "hyperlink": "https://www.cnblogs.com/pangjianxin/p/7877868.html",
+            "hyperlinkTitle": ""
+        },
+        "children": [
+            {
+                "data": {
+                    "id": "bwoogob9mpc0",
+                    "created": 1567342264695,
+                    "text": "类与类之间的关系"
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "bwoogz9ndbs0",
+                            "created": 1567342288542,
+                            "text": "泛化",
+                            "note": "# 泛化\n\n  - 泛化就是类的继承或接口的继承\n  - 实现三角形"
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "bwooh80mwy80",
+                            "created": 1567342307588,
+                            "text": "实现",
+                            "note": "# 实现\n\n  - 实现关系就是类实现接口\n  - 虚线三角形"
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "bwoohcsw3js0",
+                            "created": 1567342318003,
+                            "text": "组合",
+                            "note": "# 组合\n\n  - 组合是部分和整体的关系，部分不能离开整体而单独存在\n  - 实心菱形的实线，菱形指向整体"
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "bwoohf3ln6g0",
+                            "created": 1567342323005,
+                            "text": "聚合",
+                            "note": "# 聚合\n\n  - 部分与整体的关系，部分可以离开整体而单独存在\n  - 实线空心菱形"
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "bwoohh9eexs0",
+                            "created": 1567342327709,
+                            "text": "关联",
+                            "note": "# 关联\n\n  - 两者之间存在关联关系，如客户与订单的关系\n  - 带箭头的实线"
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "bwoohk036t40",
+                            "created": 1567342333676,
+                            "text": "依赖",
+                            "note": "# 依赖\n\n  - 一个类的实现需要另一个类的协助\n  - 带箭头的虚线"
+                        },
+                        "children": []
+                    }
+                ]
+            }
+        ]
+    },
+    "template": "default",
+    "theme": "fresh-blue",
+    "version": "1.4.43"
+}

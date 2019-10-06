@@ -1,0 +1,217 @@
+{
+    "root": {
+        "data": {
+            "id": "bwop7vw4uxc0",
+            "created": 1567344397027,
+            "text": "数据结构与算法",
+            "note": "# 数据结构与算法\n\n  - "
+        },
+        "children": [
+            {
+                "data": {
+                    "id": "bwop8ee0atc0",
+                    "created": 1567344437290,
+                    "text": "定义",
+                    "note": "# 数据结构\n\n  - 数据结构是计算机存储、组织数据的方式，指相互之间存在一种或多种特定关系的数据元素的集合\n  \n  - 分为线性结构和非线性结构\n\n## 线性结构\n  \n  - 数据元素之间存在一对一的线性关系，分为顺序存储结构和链式存储结构\n  \n  - 一维数组、队列、链表、栈等\n  \n## 非线性结构\n\n  - 二维数组、多维数组、树结构、图结构、广义表"
+                },
+                "children": []
+            },
+            {
+                "data": {
+                    "id": "bwop8m3owcg0",
+                    "created": 1567344454080,
+                    "text": "功能",
+                    "expandState": "collapse"
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "bwop911r8rk0",
+                            "created": 1567344486615,
+                            "text": "增加数据"
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "bwop9a3hga00",
+                            "created": 1567344506310,
+                            "text": "删除数据"
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "bwop9d24kv40",
+                            "created": 1567344512758,
+                            "text": "修改数据"
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "bwop9g2cw9s0",
+                            "created": 1567344519303,
+                            "text": "查找数据"
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "bwop9isxniw0",
+                            "created": 1567344525263,
+                            "text": "遍历"
+                        },
+                        "children": []
+                    }
+                ]
+            },
+            {
+                "data": {
+                    "id": "bwop9o3geow0",
+                    "created": 1567344536783,
+                    "text": "常见数据结构",
+                    "expandState": "expand"
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "bwop9sevo800",
+                            "created": 1567344546181,
+                            "text": "数组"
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "bwop9uuuyt40",
+                            "created": 1567344551501,
+                            "text": "栈"
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "bwop9ztq9rs0",
+                            "created": 1567344562317,
+                            "text": "队列",
+                            "note": "# 队列\n\n## 特点\n \n  - 遵循先进先出(FIFO)的原则\n  - 不支持随机取元素\n\n## 常用操作\n\n  - 获取列头\n  - 插入队列\n  - 判断队列是否已满\n  - 判断队列是否为空"
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "bwopa61fdi80",
+                            "created": 1567344575843,
+                            "text": "树"
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "bwopaimz1xk0",
+                            "created": 1567344603267,
+                            "text": "链表",
+                            "expandState": "collapse"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "bwopizfl58w0",
+                                    "created": 1567345266739,
+                                    "text": "特点",
+                                    "note": "# 特点\n\n  - 由节点组成的线性集合，每个节点可以通过指针指向其他节点"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "bwopj63ymwg0",
+                                    "created": 1567345281274,
+                                    "text": "分类"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "bwopjdl3dxs0",
+                                            "created": 1567345297547,
+                                            "text": "单向链表"
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "bwopjhy4hu80",
+                                            "created": 1567345307042,
+                                            "text": "双向链表"
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "bwopjnscloo0",
+                                            "created": 1567345319754,
+                                            "text": "循环链表"
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            },
+                            {
+                                "data": {
+                                    "id": "bwopm22spa00",
+                                    "created": 1567345507588,
+                                    "text": "优点"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "bwopm5g3uy80",
+                                    "created": 1567345514924,
+                                    "text": "缺点"
+                                },
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "bwopalubip40",
+                            "created": 1567344610242,
+                            "text": "哈希表"
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "bwopaodw1ug0",
+                            "created": 1567344615778,
+                            "text": "图"
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "bwopatpbx400",
+                            "created": 1567344627354,
+                            "text": "堆"
+                        },
+                        "children": []
+                    }
+                ]
+            },
+            {
+                "data": {
+                    "id": "bwp1f3ynsu00",
+                    "created": 1567378816462,
+                    "text": "算法"
+                },
+                "children": []
+            }
+        ]
+    },
+    "template": "right",
+    "theme": "fresh-blue",
+    "version": "1.4.43"
+}
