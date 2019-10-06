@@ -141,7 +141,7 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="-8" />
     <option name="y" value="-8" />
     <option name="width" value="1323" />
@@ -263,9 +263,9 @@
     <option name="totallyTimeSpent" value="39244000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="784" extended-state="7" />
+    <frame x="-8" y="-8" width="1382" height="784" extended-state="6" />
     <layout>
-      <window_info anchor="top" x="538" y="159" width="740" height="492" id="Run" order="0" side_tool="true" type="WINDOWED" visible="true" weight="0.28196722" />
+      <window_info anchor="top" x="538" y="159" width="740" height="492" id="Run" order="0" side_tool="true" type="WINDOWED" weight="0.28196722" />
       <window_info active="true" id="Project" order="0" visible="true" weight="0.26096824" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />

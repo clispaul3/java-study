@@ -14,6 +14,12 @@
             <artifactId>mysql-connector-java</artifactId>
             <version>5.1.48</version>
         </dependency>
+        <!-- https://mvnrepository.com/artifact/org.mybatis/mybatis -->
+        <dependency>
+            <groupId>org.mybatis</groupId>
+            <artifactId>mybatis</artifactId>
+            <version>3.5.0</version>
+        </dependency>
     </dependencies>
 
 </project>
