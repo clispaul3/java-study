@@ -1,0 +1,32 @@
+{
+    "root": {
+        "data": {
+            "id": "bxicdwc5exs0",
+            "created": 1570354992451,
+            "text": "MyBatis"
+        },
+        "children": [
+            {
+                "data": {
+                    "id": "bxice5cc7u00",
+                    "created": 1570355012054,
+                    "text": "配置文件",
+                    "note": "## 配置文件\n  \n  mybatis.xml\n  \n"
+                },
+                "children": []
+            },
+            {
+                "data": {
+                    "id": "bxice934g8w0",
+                    "created": 1570355020204,
+                    "text": "映射文件",
+                    "note": "## 映射文件\n\n  beans.xml"
+                },
+                "children": []
+            }
+        ]
+    },
+    "template": "right",
+    "theme": "fresh-blue",
+    "version": "1.4.43"
+}
