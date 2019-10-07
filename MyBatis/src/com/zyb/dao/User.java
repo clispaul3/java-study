@@ -2,7 +2,6 @@ package com.zyb.dao;
 
 import org.apache.ibatis.type.Alias;
 
-@Alias("UU")
 public class User {
     private String id;
     private String username;

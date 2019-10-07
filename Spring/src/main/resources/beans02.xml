@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+    http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+    <bean id="user01" class="com.zyb.dao.User">
+        <property name="card" ref="getIDCard"/>
+    </bean>
+    <bean id="user02" class="com.zyb.dao.User">
+        <property name="card">
+            <bean class="com.zyb.dao.IDCard">
+                <property name="id" value="10000"/>
+            </bean>
+        </property>
+    </bean>
+    <bean id="getIDCard" class="com.zyb.dao.IDCard">
+        <property name="id" value="10086"/>
+    </bean>
+    <bean id="user03" class="com.zyb.dao.User">
+        <property name="username" value="zhangfei"/>
+        <property name="friends">
+            <list>
+                <bean class="com.zyb.dao.User">
+                    <property name="username" value="guangyu"/>
+                </bean>
+                <ref bean="user01"/>
+            </list>
+        </property>
+        <property name="hobbies">
+            <map>
+                <entry key="001" value="basketball"/>
+                <entry key="002">
+                    <bean class="com.zyb.dao.User">
+                        <property name="username" value="xishi"/>
+                    </bean>
+                </entry>
+            </map>
+        </property>
+    </bean>
+
+</beans>

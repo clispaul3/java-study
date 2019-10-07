@@ -4,6 +4,16 @@
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.zyb.dao.UserMapper">
     <select id="getUser" resultType="User">
-        select * from user where username=#{username}
+        select * from user where username = #{username} and age = #{age}
     </select>
+    <!--获取自增的主键-->
+    <insert id="insertOne" parameterType="com.zyb.dao.User" useGeneratedKeys="true" keyProperty="id">
+        insert into user(username,age,user_address) values(#{username},#{age},#{userAddress})
+    </insert>
+    <update id="updateOne">
+        update user set age=#{age} where username=#{username}
+    </update>
+    <delete id="deleteOne">
+        delete from user where username like #{username}
+    </delete>
 </mapper>

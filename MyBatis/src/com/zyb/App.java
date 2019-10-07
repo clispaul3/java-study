@@ -2,6 +2,7 @@ package com.zyb;
 
 import com.zyb.dao.User;
 import com.zyb.dao.UserMapper;
+import com.zyb.operation.TableUser;
 import org.apache.ibatis.io.Resources;
 import org.apache.ibatis.session.SqlSession;
 import org.apache.ibatis.session.SqlSessionFactory;
@@ -22,8 +23,8 @@ import java.util.Map;
  */
 public class App {
     public static void main(String[] args) {
-//        test2();
-        test1();
+        test2();
+//        test1();
     }
     // 绑定接口，通过配置文件创建接口实现类
     public static void test2(){
@@ -36,8 +37,7 @@ public class App {
             sqlSessionFactory = new SqlSessionFactoryBuilder().build(inputStream);
             session = sqlSessionFactory.openSession();
             UserMapper mapper = session.getMapper(UserMapper.class);
-            User user = mapper.getUser("zhangfei");
-            System.out.println(user.toString());
+            TableUser.test(mapper);
         } catch (IOException e) {
             e.printStackTrace();
         } finally {
