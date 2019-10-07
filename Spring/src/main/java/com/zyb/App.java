@@ -19,6 +19,8 @@ public class App {
         System.out.println(computer.toString());
         Computer computer1 = (Computer) context.getBean("computer02");
         System.out.println(computer1.toString());
+        Computer computer2 = (Computer) context.getBean("computer03");
+        System.out.println(computer2);
     }
     public static void test07(){
         ApplicationContext context = new ClassPathXmlApplicationContext("beans04.xml");

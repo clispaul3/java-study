@@ -73,3 +73,9 @@
         <constructor-arg name="price" value="6508.8"/>
     </bean>
 ```
+
+### FactoryBean
+  - 实现FactoryBean接口的工厂在创建对象的时候，不管是单实例还是多实例，都是获取实例的时候才创建
+```xml
+<bean id="computer03" class="com.zyb.factory.ComputerFactory"/>
+```

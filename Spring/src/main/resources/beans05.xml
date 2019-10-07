@@ -16,4 +16,5 @@
         <constructor-arg name="brand" value="戴尔"/>
         <constructor-arg name="price" value="6508.8"/>
     </bean>
+    <bean id="computer03" class="com.zyb.factory.ComputerFactory"/>
 </beans>
