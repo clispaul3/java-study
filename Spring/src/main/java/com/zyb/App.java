@@ -1,15 +1,36 @@
 package com.zyb;
 
+import com.zyb.dao.Computer;
 import com.zyb.dao.IDCard;
 import com.zyb.dao.User;
 import org.junit.Test;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
+
 public class App {
     public static void main(String[] args) {
         System.out.println("test");
-        test05();
+        test08();
+    }
+    public static void test08(){
+        ApplicationContext context = new ClassPathXmlApplicationContext("beans05.xml");
+        Computer computer = (Computer) context.getBean("computer01");
+        System.out.println(computer.toString());
+        Computer computer1 = (Computer) context.getBean("computer02");
+        System.out.println(computer1.toString());
+    }
+    public static void test07(){
+        ApplicationContext context = new ClassPathXmlApplicationContext("beans04.xml");
+        User user = (User) context.getBean("user02");
+        System.out.println(user.getUsername());
+    }
+    public static void test06(){
+        ApplicationContext context = new ClassPathXmlApplicationContext("beans04.xml");
+        User user = (User) context.getBean("user01");
+        System.out.println(user.getCard().getId());
+        IDCard card = (IDCard) context.getBean("card01");
+        System.out.println(card.getId());
     }
     public static void test05(){
         ApplicationContext context = new ClassPathXmlApplicationContext("beans03.xml");
