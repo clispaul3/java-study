@@ -79,3 +79,67 @@
 ```xml
 <bean id="computer03" class="com.zyb.factory.ComputerFactory"/>
 ```
+
+### 生命周期
+  - 生命周期方法不能有任何参数，但可以抛异常
+  - ioc容器销毁的时候，执行生命周期的销毁方法（单实例对象）
+  - ioc容器销毁的时候，不会执行生命周期的销毁方法（多实例对象）
+  
+### 后置处理器
+  - 在bean初始化前后调用
+  - 要实现接口 BeanPostProcessori
+  
+### 引入外部的配置文件
+```xml
+<context:property-placeholder location="db.properties"/>
+```
+
+### 基于xml的自动装配
+> 针对的引用数据类型，不包括基本数据类型
+  - autowire  没有找到装配null
+    1. byName 根据属性名找对应id的bean
+    2. byType 根据属性类型找到对应的bean  如果找到多个会报错
+    3. constructor 根据构造器装配bean 如果找到多个，则以参数名进行匹配
+    + 如果属性是List,则会把容器中所有匹配的类型装配进List
+    
+### SPEl spring的el 表达式
+
+## 基于配置的IOC容器
+### 四个注解
+>添加任何一个注解，都能加入到IOC容器中进行管理
+>通过类名小写拿到对应的bean,默认都是单实例的
+  1. @Controller  控制器层的类
+  2. @Service     业务逻辑层的类
+  3. @Component   其他层的类
+  4. @Repository  持久层的类
+```java
+Book book = (Book) context.getBean("book");
+```
+### 通过注解传入参数
+```java
+@Repository("book01")
+@Scope(value = "prototype")
+```
+### 添加过滤条件
+```xml
+<context:component-scan base-package="com.zyb" use-default-filters="false">
+<!--        <context:exclude-filter type="annotation"-->
+<!--                                expression="org.springframework.stereotype.Service"/>-->
+<!--        <context:exclude-filter type="assignable" expression="com.zyb.dao.Book"/>-->
+        <context:include-filter type="assignable" expression="com.zyb.dao.Book"/>
+</context:component-scan>
+```
+### 注解方式的自动装配
+  - @Autowired  装配的是和属性名同名的bean
+  - @Autowired(required=false)  找不到就装配null
+  - @Qulifier("")  指定id名去查找bean
+  - @Autowired 如果用在方法上，则会为方法的参数主动注入值
+  - @Resource J2EE的标准，扩展性更强
+```java
+ @Autowired
+    private IService noteService;
+ @Autowired
+    private IService bookService;
+```
+### 泛型依赖注入
+

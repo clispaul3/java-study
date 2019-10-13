@@ -7,7 +7,12 @@ public class Computer {
     private String display;
     private String keyboard;
     private float price;
-
+    private void circleInt(){
+        System.out.println("init-circle");
+    }
+    private void circleDestory(){
+        System.out.println("destory-circle");
+    }
     public String getBrand() {
         return brand;
     }

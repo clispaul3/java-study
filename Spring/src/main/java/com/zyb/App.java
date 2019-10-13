@@ -1,17 +1,56 @@
 package com.zyb;
 
-import com.zyb.dao.Computer;
-import com.zyb.dao.IDCard;
+
+import com.zyb.controller.BookController;
+import com.zyb.dao.*;
 import com.zyb.dao.User;
+import com.zyb.utils.Calculator;
+import org.apache.ibatis.session.SqlSession;
+import org.apache.ibatis.session.SqlSessionFactory;
 import org.junit.Test;
 import org.springframework.context.ApplicationContext;
+import org.springframework.context.ConfigurableApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 
 public class App {
     public static void main(String[] args) {
         System.out.println("test");
-        test08();
+        test13();
+    }
+    public static void test13(){
+        ConfigurableApplicationContext context =
+                new ClassPathXmlApplicationContext("application.xml");
+        Calculator calculator = (Calculator) context.getBean("calculator");
+        calculator.add(1,2);
+    }
+    @Test
+    public static void test12(){
+        ConfigurableApplicationContext context =
+                new ClassPathXmlApplicationContext("application.xml");
+        BookController bookController = (BookController) context.getBean("bookController");
+        System.out.println(bookController.hashCode());
+        bookController.doGet();
+    }
+    public static void test11(){
+        ConfigurableApplicationContext context = new ClassPathXmlApplicationContext("beans07.xml");
+        Person person = (Person) context.getBean("user");
+        System.out.println(person.toString());
+    }
+    public static void test10(){
+        ConfigurableApplicationContext context = new ClassPathXmlApplicationContext("database.xml");
+        SqlSessionFactory sessionFactory = (SqlSessionFactory) context.getBean("dataSource");
+        SqlSession session = sessionFactory.openSession();
+        System.out.println(session.hashCode());
+        Person person = session.selectOne("com.zyb.dao.Person.selectOne", "zhangyb");
+        System.out.println(person.toString());
+        session.close();
+    }
+    public static void test09(){
+        ConfigurableApplicationContext context = new ClassPathXmlApplicationContext("beans06.xml");
+        Computer computer = (Computer) context.getBean("computer01");
+        System.out.println(computer.getBrand());
+        context.close();
     }
     public static void test08(){
         ApplicationContext context = new ClassPathXmlApplicationContext("beans05.xml");
